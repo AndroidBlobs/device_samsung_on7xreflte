@@ -1,0 +1,37 @@
+#
+# from device/samsung/on7xreflte/system.prop
+#
+#
+# system.prop for universal7870
+#
+ro.arch=exynos7870
+ro.sf.lcd_density=420
+ro.kernel.qemu=0
+ro.kernel.qemu.gles=1
+persist.demo.hdmirotationlock=false
+#Eed DS/SS property
+import /efs/factory.prop
+ro.multisim.simslotcount=2
+#Enable S.LSI USB settings
+dev.usbsetting.embedded=on
+#RILD debug level setting
+ro.debug_level=0x494d
+# Specify a vendor RIL and a device node
+rild.libpath=/system/lib64/libsec-ril.so
+rild.libargs=-d /dev/umts_ipc0
+# GPU WFD support
+ro.vendor.wfdsupport=1
+#Enable CSC for vendor image
+ro.vendor.cscsupported=1
+# DHA property
+ro.config.dha_cached_min=4
+ro.config.dha_cached_max=8
+ro.config.dha_empty_min=8
+ro.config.dha_empty_max=24
+ro.config.dha_lmk_scale=0.773
+ro.cfg.dha_2ndprop_thMB=3072
+ro.cfg.dha_cached_max=10
+ro.cfg.dha_empty_max=24
+ro.config.add_bonusEFK=1
+
+#
